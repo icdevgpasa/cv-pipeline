@@ -45,7 +45,7 @@ jobs:
         run: pandoc README.md -o CV-Andrzej-Gorecki.pdf
 
       - name: Upload CV as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
           path: CV-Andrzej-Gorecki.pdf
