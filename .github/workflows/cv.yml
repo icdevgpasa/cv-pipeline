@@ -1,50 +1,38 @@
 name: DevOps Engineer CV
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
-  build-cv:
+  cv:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        section: [Profile, Skills, Experience, Certifications]
     steps:
-      - name: Checkout profile
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Profile
-        run: echo "👋 Hi, I'm Andrzej Górecki – DevOps Engineer with 15+ years in IT"
-
-      - name: Experience
-        run: |
-          echo "💼 Solution Architect / Lead Developer (2023–present)"
-          echo "   - CI/CD: GitLab CI, GitHub Actions"
-          echo "   - Cloud: AWS, Azure"
-          echo "   - Containers: Docker, Kubernetes"
-          echo "   - IaC: Ansible, Terraform"
-          echo ""
-          echo "💼 Network / Systems Engineer (2018–2023)"
-          echo "   - Linux (Debian, Ubuntu, CentOS)"
-          echo "   - Virtualization: Proxmox, VMware"
-          echo "   - Monitoring: Prometheus, Grafana"
-
-      - name: Skills
-        run: |
-          echo "🔧 CI/CD: GitLab CI, GitHub Actions, Jenkins"
-          echo "🐳 Containers: Docker, Kubernetes"
-          echo "☁️ Cloud: AWS, Azure"
-          echo "🛠️ IaC: Ansible, Terraform, Bash, Python"
-          echo "📈 Monitoring: Prometheus, Grafana, ELK"
-          echo "🔐 Security: IAM, VPN, backups"
-
-      - name: Deployment
-        run: echo "🚀 Ready to join your fintech team"
-
-      # --- PDF generation ---
-      - name: Install pandoc
+      - name: Install Pandoc + LaTeX
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base
 
-      - name: Generate CV PDF
-        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf
+      - name: Display ${{ matrix.section }}
+        run: |
+          echo -e "\e[32m=== ${{ matrix.section }} ===\e[0m"
+          cat README.md | grep -A10 ${{ matrix.section }}
 
-      - name: Upload CV as artifact
+      - name: Easter egg - Terraform snippet
+        if: matrix.section == 'Skills'
+        run: |
+          echo 'resource "candidate" "andrzej" { role="DevOps Engineer"; skills=["Docker","K8s","CI/CD"] }'
+
+      - name: Generate PDF
+        if: matrix.section == 'Profile'
+        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=cv-template.tex --pdf-engine=xelatex
+
+      - name: Upload PDF artifact
+        if: matrix.section == 'Profile'
         uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
