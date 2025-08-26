@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Pandoc + LaTeX
-        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base pandoc-templates
 
       - name: Display ${{ matrix.section }}
         run: |
@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate PDF
         if: matrix.section == 'Profile'
-        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=cv-template.tex --pdf-engine=xelatex
+        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=./cv-template.tex --pdf-engine=xelatex
 
       - name: Upload PDF artifact
         if: matrix.section == 'Profile'
