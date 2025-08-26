@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Pandoc + LaTeX
-        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-latex-extra.
 
       - name: Display ${{ matrix.section }}
         run: |
