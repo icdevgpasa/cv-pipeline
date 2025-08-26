@@ -17,7 +17,7 @@ jobs:
           echo "💼 Solution Architect / Lead Developer (2023–present)"
           echo "   - CI/CD: GitLab CI, GitHub Actions"
           echo "   - Cloud: AWS, Azure"
-          echo "   - Containers: Docker, DockerSwarm"
+          echo "   - Containers: Docker, Kubernetes"
           echo "   - IaC: Ansible, Terraform"
           echo ""
           echo "💼 Network / Systems Engineer (2018–2023)"
@@ -36,3 +36,16 @@ jobs:
 
       - name: Deployment
         run: echo "🚀 Ready to join your fintech team"
+
+      # --- PDF generation ---
+      - name: Install pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base
+
+      - name: Generate CV PDF
+        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf
+
+      - name: Upload CV as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: CV-PDF
+          path: CV-Andrzej-Gorecki.pdf
