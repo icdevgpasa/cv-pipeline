@@ -16,7 +16,7 @@ jobs:
 
       - name: Install Pandoc + LaTeX
         if: matrix.section == 'Experience'
-        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-latex-extra.
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-noto fonts-noto-color-emoji
 
       - name: Display ${{ matrix.section }}
         run: |
