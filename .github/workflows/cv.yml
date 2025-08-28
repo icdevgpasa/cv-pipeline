@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate PDF
         if: matrix.section == 'Experience'
-        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=./cv-template.tex --pdf-engine=xelatex --variable mainfont="Noto Sans"
+        run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=./cv-template.tex --pdf-engine=xelatex --variable mainfont="Noto Emoji"
 
       - name: Upload PDF artifact
         if: matrix.section == 'Experience'
