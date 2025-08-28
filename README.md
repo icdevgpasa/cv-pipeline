@@ -12,6 +12,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 ---
 
 ## Skills
+
 ![CI/CD](https://img.shields.io/badge/CI/CD%20expert-green)
 ![Docker](https://img.shields.io/badge/Docker-Advanced-blue)
 ![AWS](https://img.shields.io/badge/AWS-Advanced-orange)
@@ -29,6 +30,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 
 
 **Solution Architect / Lead Developer – [DB Schenker] (2023–present)**  
+
 - Designed CI/CD pipelines, automated deployments  
 - Maintained hybrid infrastructure (bare metal + AWS/Azure)  
 - Docker/Swarm for microservices  
@@ -37,6 +39,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 
 
 **Network / Systems Engineer – [NovaMedical] (2018–2023)**  
+
 - Linux server administration (Debian, Ubuntu, CentOS)  
 - Virtualization: Proxmox, VMware  
 - Network configuration (VPN, MikroTik)  
