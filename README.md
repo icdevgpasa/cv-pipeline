@@ -1,10 +1,3 @@
-# Andrzej Górecki
-
-**DevOps Engineer / Solution Architect**  
-
-📍 Poland | 📧 andrzej.gorecki@gpasa.com | 📱 +48 572 509 581 | 
-
----
 
 ## Profile
 DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS), containers (Docker, DockerSwarm) and monitoring (Prometheus, Grafana). Experienced in building and maintaining highly available infrastructures in healthtech and enterprise environments.
@@ -15,9 +8,9 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 
 ![CI/CD](https://img.shields.io/badge/CI/CD%20expert-green)
 ![Docker](https://img.shields.io/badge/Docker-Advanced-blue)
-![AWS](https://img.shields.io/badge/AWS-Advanced-orange)
-- CI/CD: GitLab CI, GitHub Actions 
-- Containers: Docker, Swarm
+![AWS](https://img.shields.io/badge/AWS-Advanced-orange)   
+- CI/CD: GitLab CI, GitHub Actions   
+- Containers: Docker, Swarm  
 - Cloud: AWS, Azure  
 - IaC / Automation: Terraform, Ansible, Bash, Python  
 - Monitoring: Prometheus, Grafana, ELK  
@@ -59,6 +52,13 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 ## Languages
 - Polish – native  
 - English – B2 (technical, documentation, meetings)  
+
+## Contact 
+
+Andrzej Górecki |📍 Poland | 📧 andrzej.gorecki@gpasa.com | 📱 +48 572 509 581 | 
+
+---
+
 
 ---
 
