@@ -1,11 +1,15 @@
+```{=latex}
+\begin{comment}
+Ten tekst będzie **niewidoczny w PDF**, ale w Markdown wciąż widać cały blok.
+Możesz tu np. pisać notatki lub dodatkowe informacje dla siebie.
 # Andrzej Górecki
 
 **DevOps Engineer / Solution Architect**  
 
-=======
 📍 Poland | 📧 andrzej.gorecki@gpasa.com | 📱 +48 572 509 581 | 
 
 ---
+\end{comment}
 
 ## Profile
 DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS), containers (Docker, DockerSwarm) and monitoring (Prometheus, Grafana). Experienced in building and maintaining highly available infrastructures in healthtech and enterprise environments.
