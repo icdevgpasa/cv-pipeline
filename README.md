@@ -29,7 +29,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 ## Experience
 
 
-**Solution Architect / Lead Developer – [DB Schenker] (2023–present)**  
+**Solution Architect / Lead Developer – [DB Schenker] (2023–present)**
 
 - Designed CI/CD pipelines, automated deployments  
 - Maintained hybrid infrastructure (bare metal + AWS/Azure)  
@@ -37,16 +37,15 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 - Monitoring: Grafana, Prometheus  
 - IaC: Ansible & Terraform
 
-
-**Network / Systems Engineer – [NovaMedical] (2018–2023)**  
+**Network / Systems Engineer – [NovaMedical] (2018–2023)**
 
 - Linux server administration (Debian, Ubuntu, CentOS)  
 - Virtualization: Proxmox, VMware  
 - Network configuration (VPN, MikroTik)  
 - Backups, security policies, documentation
 
+**Software Engineer – [GPA S.A.] (2010–2018)**
 
-**Software Engineer – [GPA S.A.] (2010–2018)**  
 - Backend applications (PHP, Node.js)  
 - Deployment automation, API integration, SQL  
 
