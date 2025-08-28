@@ -1,6 +1,8 @@
 # Andrzej Górecki
 
 **DevOps Engineer / Solution Architect**  
+
+=======
 📍 Poland | 📧 andrzej.gorecki@gpasa.com | 📱 +48 572 509 581 | 
 
 ---
@@ -33,7 +35,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 - Monitoring: Grafana, Prometheus  
 - IaC: Ansible & Terraform
 
-**Network / Systems Engineer – [Company] (2018–2023)**  
+**Network / Systems Engineer – [NovaMedical] (2018–2023)**  
 - Linux server administration (Debian, Ubuntu, CentOS)  
 - Virtualization: Proxmox, VMware  
 - Network configuration (VPN, MikroTik)  

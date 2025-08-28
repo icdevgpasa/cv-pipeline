@@ -22,11 +22,6 @@ jobs:
           echo -e "\e[32m=== ${{ matrix.section }} ===\e[0m"
           cat README.md | grep -A10 ${{ matrix.section }}
 
-      - name: Easter egg - Terraform snippet
-        if: matrix.section == 'Skills'
-        run: |
-          echo 'resource "candidate" "andrzej" { role="DevOps Engineer"; skills=["Docker","K8s","CI/CD"] }'
-
       - name: Generate PDF
         if: matrix.section == 'Profile'
         run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=./cv-template.tex --pdf-engine=xelatex
@@ -35,5 +30,5 @@ jobs:
         if: matrix.section == 'Profile'
         uses: actions/upload-artifact@v4
         with:
-          name: CV-PDF
+          name: CV-Andrzej-Gorecki
           path: CV-Andrzej-Gorecki.pdf
