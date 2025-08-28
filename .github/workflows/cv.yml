@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Pandoc + LaTeX
+        if: matrix.section == 'Experience'
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-latex-extra.
 
       - name: Display ${{ matrix.section }}
@@ -23,11 +24,11 @@ jobs:
           cat README.md | grep -A10 ${{ matrix.section }}
 
       - name: Generate PDF
-        if: matrix.section == 'Profile'
+        if: matrix.section == 'Experience'
         run: pandoc README.md -o CV-Andrzej-Gorecki.pdf --from markdown --template=./cv-template.tex --pdf-engine=xelatex
 
       - name: Upload PDF artifact
-        if: matrix.section == 'Profile'
+        if: matrix.section == 'Experience'
         uses: actions/upload-artifact@v4
         with:
           name: CV-Andrzej-Gorecki
