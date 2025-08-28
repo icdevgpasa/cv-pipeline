@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        section: [Profile, Skills, Experience, Certifications]
+        section: [Profile, Skills, Experience]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
