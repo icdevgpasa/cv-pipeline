@@ -17,7 +17,7 @@ DevOps Engineer with 15+ years in IT. Skilled in automation, CI/CD, cloud (AWS),
 ---
 
 ## Skills
-![CI/CD](https://img.shields.io/badge/CI-CD-Expert-green)
+![CI/CD](https://img.shields.io/badge/CI/CD%20expert-green)
 ![Docker](https://img.shields.io/badge/Docker-Advanced-blue)
 ![AWS](https://img.shields.io/badge/AWS-Advanced-orange)
 - CI/CD: GitLab CI, GitHub Actions 
